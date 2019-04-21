@@ -75,5 +75,26 @@ public class FrameDriver extends JFrame{
 		ticks.put(4, new JLabel ("4"));
 		slider.setLabelTable(ticks);
 		slider.setPaintLabels(true);
-		
+	}
+	public FrameDriver() {
+		super("Hamming Distance");
+		setSize(600,800);
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
+		setFields();
+		panel0 = new JSplitPane(JSplitPane.HORIZONTAL_SPLIT, panel1, panel2);
+		panel1 = new JPanel();
+		panel2 = new JPanel();
+		panel1.setSize(new Dimension(300, 800));
+		panel1.add(hammingDistlbl);
+		panel1.add(HammingDist);
+		panel1.add(slider);
+		panel1.add(showStation);
+		panel1.add(stationList);
+		panel1.add(compareWith);
+		panel1.add(stationDropDown);
+		panel0.add(panel1);
+		panel0.add(panel2);
+		add(panel0);
+		panel0.setDividerSize(300);
+		setVisible(true);
 	}
