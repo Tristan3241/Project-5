@@ -42,3 +42,13 @@ public class FrameDriver extends JFrame{
 	private JTextField station;
 	private static ArrayList<String> STID;
 	
+	public static void readFile(String filename) throws FileNotFoundException {
+		Scanner in = new Scanner(new File(filename));
+		STID = new ArrayList<>();;
+		while (in.hasNext()) {
+			String next = in.nextLine();
+			STID.add(next);
+			
+		}
+		in.close();
+	}
