@@ -52,3 +52,28 @@ public class FrameDriver extends JFrame{
 		}
 		in.close();
 	}
+	
+	
+	@SuppressWarnings({ "unchecked", "rawtypes" })
+	private void setFields() {
+		hammingDistlbl = new JLabel("Enter Hamming Dist:");
+		HammingDist = new JTextField(13);
+		showStation = new JButton("Show Station");
+		stationList = new JTextArea(20, 24);
+		compareWith = new JLabel("Compare with:                    ");
+		stationDropDown = new JComboBox(STID.toArray());
+		//creating slider setting minor tick spacing
+		slider = new JSlider(SwingConstants.HORIZONTAL, 1, 4, 1);
+		slider.setSize(50, 50);
+		slider.setMinorTickSpacing(1);
+		slider.setPaintTicks(true);
+		//creating table of values to label ticks
+		Hashtable<Integer, JLabel> ticks = new Hashtable<>();
+		ticks.put(1, new JLabel("1"));
+		ticks.put(2, new JLabel ("2"));
+		ticks.put(3,  new JLabel ("3"));
+		ticks.put(4, new JLabel ("4"));
+		slider.setLabelTable(ticks);
+		slider.setPaintLabels(true);
+		
+	}
