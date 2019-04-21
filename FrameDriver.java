@@ -98,3 +98,10 @@ public class FrameDriver extends JFrame{
 		panel0.setDividerSize(300);
 		setVisible(true);
 	}
+
+public static void main(String[] args) throws FileNotFoundException {
+		readFile("Mesonet.txt");
+		new FrameDriver();
+	}
+
+}
