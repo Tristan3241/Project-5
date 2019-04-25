@@ -16,5 +16,37 @@ My calcHammDist method that uses an Arraylist that has the STID and then takes t
 
                                                   
 
-
+                                          FrameDriver
+                                          - panel0 JPanel
+                                          - panel1 Jpanel
+                                          - hammingDistlbl JLabel
+                                          - slider JSlider
+                                          - showStation JButton
+                                          - StationList JTextArea
+                                          - compareWith JLabel
+                                          - stationDropDown JComboBox
+                                          - calculateHD JButton
+                                          - distFld0 JTextField
+                                          - dist0 JLabel
+                                          - distFld1 JTextField
+                                          - dist1 JLabel
+                                          - distFld2 JTextField
+                                          - dist2 JLabel
+                                          - distFld3 JTextField
+                                          - dist3 JLabel
+                                          - distFld4 JTextField
+                                          - dist4 JLabel
+                                          - addStation JButton
+                                          - station JTextField
+                                          - js JScrollPane
+                                          - STID ArrayList<String>
+                                          - out BufferedWriter
+                                          - hammDist int[]
+                                          - lblNewLabel JLabel
+                                 ------------------------------------------
+                                 + FrameDriver()
+                                 + setFields() void
+                                 + readFile() ArrayList<String>
+                                 + calcHammDist() ArrayList<String>
+                                 
 
