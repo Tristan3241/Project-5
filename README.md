@@ -15,3 +15,6 @@ My calcHammDist method that uses an Arraylist that has the STID and then takes t
 
 
                                                   
+
+
+
